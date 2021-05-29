@@ -118,13 +118,7 @@
 									    <article class="timeline__item">
 									        <h5 class="title title--h5 timeline__title"></h5>
 										    <span class="timeline__period">From : 2017</span>
-										    <p class="timeline__description">
-												I am a Back-End Developer, interested in
-												studying and implementing networking and
-												penetration testing, as well as implementing new
-												ideas and executing solutions. I am currently
-												working on developing web applications with
-												Node.js-Express</p>
+										    <p class="timeline__description" id="aboutt"></p>
 										</article>
 									</div>
 								</div>
@@ -338,11 +332,18 @@
 	
 
 	<!-- JavaScripts -->
+	<script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
 	<script src="./assets/js/jquery-3.4.1.min.js"></script>
 	<script src="./assets/js/plugins.min.js"></script>
     <script src="./assets/js/common.js"></script>
     <script src="./assets/js/all.js"></script>
-	
+	<script>
+		new TypeIt("#aboutt", {
+			strings: "I am a Back-End Developer, interested in studying and implementing networking and penetration testing, as well as implementing new ideas and executing solutions. I am currently working on developing web applications with Node.js-Express",
+			speed: 25,
+			loop: false
+		}).go();
+	</script>
 
     <script src="./assets/demo/plugins-demo.js"></script>
 </body>
